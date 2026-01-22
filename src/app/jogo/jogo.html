@@ -1,12 +1,17 @@
 <section id="Jogo-Principal">
     <div class="Layout-Jogo">
-        <div id="Resultado-Jogo">
-            <p>Voce:{{Resultado}}</p>
+        <div class="Modo-Jogo">
+            <button id="Nivel-Jogo">Nível Fácil</button>
+            <button id="Nivel-Jogo">Nível Médio</button>
+            <button id="Nivel-Jogo">Nível Difícil</button>
+            <button id="Nivel-Jogo">Nível Muito Difícil</button>
+            <button id="Nivel-Jogo">Nível Impossível</button>
         </div>
         <div class="Elementos-Jogo">
-            <input type="text" id="Inserir-Numero" placeholder="Digite o numero..." [ngClass]="Inserir_Numero">
+            <p id="Resultado-Jogo">Voce:{{Resultado}}</p>
+            <input type="text" id="Inserir-Numero" placeholder="Digite o numero..." ([ngModel])="Inserir_Numero">
             <input type="button" id="Enviar-Numero" value="Enviar"><br>
-            <button (click)="Jogo()">Ver Resultado</button>
+            <!-- <button (click)="Jogo()">Ver Resultado</button> -->
         </div>
-    </div>
+    </div>  
 </section>
