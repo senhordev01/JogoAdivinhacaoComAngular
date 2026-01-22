@@ -1,0 +1,12 @@
+<section id="Jogo-Principal">
+    <div class="Layout-Jogo">
+        <div id="Resultado-Jogo">
+            <p>Voce:{{Resultado}}</p>
+        </div>
+        <div class="Elementos-Jogo">
+            <input type="text" id="Inserir-Numero" placeholder="Digite o numero..." [ngClass]="Inserir_Numero">
+            <input type="button" id="Enviar-Numero" value="Enviar"><br>
+            <button (click)="Jogo()">Ver Resultado</button>
+        </div>
+    </div>
+</section>
