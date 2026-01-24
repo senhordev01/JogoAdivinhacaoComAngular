@@ -15,19 +15,18 @@
     background-color: rgb(255, 145, 0);
     margin-top: 40px;
     color: white;
-    /* transition-delay: 0.15s; */
 }
 #Nivel-Jogo:hover{
     height: 120px;
     box-shadow: 0 0 100px orange;
     border: 3px solid white;
-    opacity: 0.9;
-    transform: scaleY(1.4);
-    transition: 1.0s;
+    transform: scaleY(1.3);
+    transition: 0.5s;
     
 }
 #Resultado-Jogo{
-    font-size: 25px;
+    font-size: 22px;
+    padding: 20px;
 }
 .Container{
     display: flex;
@@ -38,21 +37,41 @@
     margin-top: 50px;
     background-color: #ffffff;
     width: 400px;
-    height: 300px;
+    height: 450px;
     border-radius: 25px;
+    overflow: hidden;
 }
 #Resultado-Jogo{
     margin-top: 50px;
-    margin-left: 160px;
+    margin-left: 110px;
 }
 #Inserir-Numero{
-    margin-left: 90px;
+    margin-left: 85px;
     outline: none;
     text-align: center;
-    width: 200px;
+    width: 220px;
     height: 50px;
     border: 0;
     border-bottom: 2px solid black;
+}
+#Resetar-Jogo{
+    width: 160px;
+    height: 45px;
+    margin-left: 90px;
+    margin-top: 20px;
+    background-color: red;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 110px;
+    border-radius: 15px;
+
+}
+#Resetar-Jogo:hover{
+    opacity: 0.65;
+    border: 3px solid rgb(2, 97, 24);
+
 }
 #Enviar-Numero{
     width: 205px;
@@ -69,4 +88,9 @@
 #Enviar-Numero:hover{
     border: 3px solid rgb(2, 97, 24);
     opacity: 0.65;
+}
+#Situacao-Partida{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
 }
