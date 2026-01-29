@@ -1,7 +1,7 @@
 <section id="Jogo-Principal">
     <div class="Layout-Jogo">
         <div class="Modo-Jogo">
-            <button id="Nivel-Jogo" (click)="Jogo_Nivel_Facil()">Nível Fácil</button>
+            <button id="Nivel-Jogo" (click)="Jogo_Nivel_Facil()" *ngIf="">Nível Fácil</button>
             <button id="Nivel-Jogo" (click)="Jogo_Nivel_Medio()">Nível Médio</button>
             <button id="Nivel-Jogo" (click)="Jogo_Nivel_Dificil()">Nível Difícil</button>
             <button id="Nivel-Jogo" (click)="Jogo_Nivel_MuitoDificil()">Nível Muito Difícil</button>
@@ -9,7 +9,7 @@
         </div>
         <div class="Container">
             <div class="Elementos-Jogo">
-                <p id="Resultado-Jogo">Você:{{Resultado}}</p>
+                <p id="Resultado-Jogo">{{Resultado}} </p>
                 <input type="number" id="Inserir-Numero" placeholder="Digite o numero..." [(ngModel)]="Inserir_Numero">
                 <input type="reset" id="Resetar-Jogo" value="Limpar Jogo" (click)="Limpar_Jogo()">
                 <input type= "button" id="Enviar-Numero" value="Enviar">

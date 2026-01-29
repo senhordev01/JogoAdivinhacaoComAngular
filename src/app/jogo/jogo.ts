@@ -17,6 +17,7 @@ export class Jogo {
   Nivel_Muito_Dificil!:number;
   Nivel_Impossivel!:number;
 
+
   Situacao_Partida:string = "";
 
   constructor(public Titulo:Title){
@@ -26,14 +27,14 @@ export class Jogo {
   Jogo_Nivel_Facil(){
     this.Nivel_Facil = Math.floor(Math.random()*10);
     if(this.Inserir_Numero === this.Nivel_Facil){
-      this.Resultado = "Acertou!!!";
+      this.Resultado = "Você Acertou!!!";
       console.log("O usuario acertou o nivel facil");
       this.Situacao_Partida = "";
     }else if(this.Inserir_Numero < this.Nivel_Facil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é abaixo do numero correto";
     }else if(this.Inserir_Numero > this.Nivel_Facil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é acima do numero correto";
     }
   }
@@ -42,14 +43,14 @@ export class Jogo {
   Jogo_Nivel_Medio(){
     this.Nivel_Medio = Math.floor(Math.random()*100);
     if(this.Inserir_Numero === this.Nivel_Medio){
-      this.Resultado = "Acertou!!!";
+      this.Resultado = "Você Acertou!!!";
       console.log("O usuario acertou o nivel medio");
       this.Situacao_Partida = "";
     }else if(this.Inserir_Numero < this.Nivel_Medio){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é abaixo do numero correto";
     }else if(this.Inserir_Numero > this.Nivel_Medio){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é acima do numero correto";
     }
   }
@@ -58,14 +59,14 @@ export class Jogo {
   Jogo_Nivel_Dificil(){
     this.Nivel_Dificil = Math.floor(Math.random()*1000);
     if(this.Inserir_Numero === this.Nivel_Dificil){
-      this.Resultado = "Acertou!!!";
+      this.Resultado = "Você Acertou!!!";
       console.log("O usuario acertou o nivel Dificil");
       this.Situacao_Partida = "";
     }else if(this.Inserir_Numero < this.Nivel_Dificil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é abaixo do numero correto";
     }else if(this.Inserir_Numero > this.Nivel_Dificil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é acima do numero correto";
     }
   }
@@ -74,15 +75,15 @@ export class Jogo {
   Jogo_Nivel_MuitoDificil(){
     this.Nivel_Muito_Dificil = Math.floor(Math.random()*10000);
     if(this.Inserir_Numero === this.Nivel_Muito_Dificil){
-      this.Resultado = "Acertou!!!";
+      this.Resultado = "Você Acertou!!!";
       console.log("O usuario acertou o nivel Muito Dificil");
       this.Situacao_Partida = "";
       this.Resultado = "";
     }else if(this.Inserir_Numero < this.Nivel_Muito_Dificil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é abaixo do numero correto";
     }else if(this.Inserir_Numero > this.Nivel_Muito_Dificil){
-      this.Resultado = "Errou";
+      this.Resultado = "Você Errou";
       this.Situacao_Partida = "O numero que voce digitou é acima do numero correto";
     }
   }
@@ -105,7 +106,9 @@ export class Jogo {
 
   Limpar_Jogo(){
     this.Inserir_Numero = 0;
-    this.Resultado = "";
-    this.Situacao_Partida = "Vamos Começar!";
+    this.Resultado = " Jogo finalizado";
+    this.Situacao_Partida = "Até a próxima!";
+
+    // if (this.Resultado === "")
   }
 }
