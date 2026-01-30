@@ -268,3 +268,4 @@ export class Jogo {
     }, 2000);
   }
 }
+
