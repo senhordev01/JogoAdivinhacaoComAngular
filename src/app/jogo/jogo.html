@@ -11,8 +11,9 @@
             <div class="Elementos-Jogo">
                 <p id="Resultado-Jogo">{{Resultado}} </p>
                 <input type="number" id="Inserir-Numero" placeholder="Digite o numero..." [(ngModel)]="Inserir_Numero">
-                <input type="reset" id="Resetar-Jogo" value="Finalizar Jogo" (click)="Limpar_Jogo()">
-                <input type= "button" id="Enviar-Numero" value="Enviar">
+                <input type="button" id="Finalizar-Jogo" value="Finalizar Jogo" (click)="Finalizar_Jogo()">
+                <input type="button" id="Reiniciar-Jogo" value="Reiniciar Jogo" (click)="Reiniciar_Jogo()">
+                <input type= "button" id="Enviar-Numero" value="Enviar" (click)="Enviar_Jogo()">
                 <p id="Situacao-Partida">{{Situacao_Partida}}</p>
             </div>
         </div>
